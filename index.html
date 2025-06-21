@@ -1,0 +1,41 @@
+<!-- Vanessa Medina, TOP UP A ASSIGNMENT -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Top Up A Assignment </title>
+</head>
+<body>
+    <script>
+        const style = document.createElement('style');
+        style.textContent = `
+        #hello {
+            color: red;
+            
+        }
+        `;
+
+        document.head.appendChild(style);
+
+        
+        const para = document.createElement('p');
+        para.id= "hello";
+        para.textContent="Hello";
+
+        
+
+        const button = document.createElement('button');
+        button.textContent = "Professor";
+        button.onclick=function() {
+            setTimeout(() => {
+                alert('This is Vanessa');
+            }, 1000);
+        }
+
+        para.appendChild(button);
+        document.body.appendChild(para);
+
+    </script> 
+</body>
+
+</html>
